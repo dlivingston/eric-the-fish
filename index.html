@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Eric The Fish</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha256-sHwgyDk4CGNYom267UJX364ewnY4Bh55d53pxP5WDug= sha512-mkkeSf+MM3dyMWg3k9hcAttl7IVHe2BA1o/5xKLl4kBaP0bih7Mzz/DBy4y6cNZCHtE2tPgYBYH/KtEjOQYKxA==" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+</head>
+<body ng-app="tireGuide">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h1 class="navbar-brand">Eric-the-Fish</h1>
+			</div>
+			<div class="collapse navbar-collapse menu-list" id="navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Shop</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-info-sign"></span> About Us</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-map-marker"></span> Location</a></li>
+					<li class="hidden-sm hidden-md hidden-lg"><a href="#">
+						<span class="glyphicon glyphicon-arrow-up"></span> 
+						<span class="glyphicon glyphicon-arrow-up"></span> 
+						<span class="glyphicon glyphicon-arrow-down"></span> 
+						<span class="glyphicon glyphicon-arrow-down"></span> 
+						<span class="glyphicon glyphicon-arrow-left"></span> 
+						<span class="glyphicon glyphicon-arrow-right"></span> 
+						<span class="glyphicon glyphicon-arrow-left"></span> 
+						<span class="glyphicon glyphicon-arrow-right"></span> 
+						<span class="glyphicon glyphicon-bold"></span> 
+						<span class="glyphicon glyphicon-font"></span> 
+						<span class="glyphicon glyphicon-play-circle"></span> 
+						 Konami
+					</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div>
+	</nav>
+	<header class="container page-header">
+		<h1>Tire Finder App</h1>
+	</header>
+	<section class="container">
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label for="year" class="col-lg-2 sr-only">Year</label>
+				<div class="col-lg-10">
+					<select name="" id="year" class="form-control">
+						<option value="">Year</option>
+						<option value="2015">2015</option>
+						<option value="2014">2014</option>
+						<option value="2013">2013</option>
+						<option value="2012">2012</option>
+						<option value="2011">2011</option>
+						<option value="2010">2010</option>
+						<option value="2009">2009</option>
+						<option value="2008">2008</option>
+						<option value="2007">2007</option>
+						<option value="2006">2006</option>
+						<option value="2005">2005</option>
+						<option value="2004">2004</option>
+						<option value="2003">2003</option>
+						<option value="2002">2002</option>
+						<option value="2001">2001</option>
+					</select>
+				</div>
+				<label for="make" class="col-lg-2 sr-only">Make</label>
+				<div class="col-lg-10">
+					<select name="" id="make" class="form-control">
+						<option>Make</option>
+						<option value="1412">Acura</option>
+						<option value="1536">AlfaRomeo</option>
+						<option value="1521">AstonMartin</option>
+						<option value="1510">Audi</option>
+						<option value="1533">Bentley</option>
+						<option value="1514">BMW</option>
+						<option value="1648">Bugatti</option>
+						<option value="1516">Buick</option>
+						<option value="1359">Cadillac</option>
+						<option value="1512">Chevrolet</option>
+						<option value="1518">Chrysler</option>
+						<option value="1532">Dodge</option>
+						<option value="1568">Ferrari</option>
+						<option value="1526">Fiat</option>
+						<option value="1517">Ford</option>
+						<option value="1631">Freightliner</option>
+						<option value="1513">GMC</option>
+						<option value="1522">Honda</option>
+						<option value="1523">Hyundai</option>
+						<option value="1531">Infiniti</option>
+						<option value="1524">Jaguar</option>
+						<option value="1528">Jeep</option>
+						<option value="1508">Kia</option>
+						<option value="1529">Lamborghini</option>
+						<option value="1591">LandRover</option>
+						<option value="1520">Lexus</option>
+						<option value="1592">Lincoln</option>
+						<option value="1540">Maserati</option>
+						<option value="1511">Mazda</option>
+						<option value="1593">McLaren</option>
+						<option value="290">Mercedes-Benz</option>
+						<option value="1590">Mini</option>
+						<option value="1534">Mitsubishi</option>
+						<option value="372">Nissan</option>
+						<option value="1525">Porsche</option>
+						<option value="1539">RAM</option>
+						<option value="1594">Rolls-Royce</option>
+						<option value="1527">Scion</option>
+						<option value="1538">Smart</option>
+						<option value="1519">Subaru</option>
+						<option value="1630">Tesla</option>
+						<option value="1535">Toyota</option>
+						<option value="1530">Volkswagen</option>
+						<option value="1509">Volvo</option>
+					</select>
+				</div>
+				<label for="model" class="col-lg-2 sr-only">Model</label>
+				<div class="col-lg-10">
+					<select name="" id="model" class="form-control" disabled>
+						<option value="">Model</option>
+					</select>
+				</div>
+				<label for="option" class="col-lg-2 sr-only">Option</label>
+				<div class="col-lg-10">
+					<select name="" id="option" class="form-control" disabled>
+						<option value="">Option</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-lg-10 col-lg-offset-2">
+					<button type="submit" class="btn btn-primary btn-lg btn-block">Lets Find Some Tires!</button>
+				</div>
+			</div>
+		</form>
+	</section>
+	<footer class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container-fluid">
+			<a href="" class="navbar-brand">Random Footer Message</a>
+		</div>
+	</footer>
+</body>
+</html>
